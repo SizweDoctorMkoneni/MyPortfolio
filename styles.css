@@ -225,7 +225,7 @@ header{
     height: 72px;
     border: none;
     border-radius: 80px;
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     font-weight:600;
     background-color: var(--color-accent);
     color: var(--color-body);
@@ -238,7 +238,97 @@ header{
 /* End about me section */
 
 /* What I do section */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 100vw;
+    padding: 90px 0;
 
+}
+
+.services .intro{
+    width: 699px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1209px;
+    margin-bottom: 40px;
+}
+
+.services-container .service{
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ellipse{
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #75ABBC;
+}
+
+.ellipse i img{
+    width: 21px;
+    height: 21px;
+}
+
+.services-container .service .text-md{
+    font-size: var(--text-md);
+    font-weight: 600;
+    text-align: center;
+}
+.services-container .service .text-xs{
+    text-align: center;
+}
+
+.call-to-action{
+    width: 1000px;
+    height: 179px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    background-color: #75ABBC;
+    color: var(--color-body);
+    border-radius: 40px;
+    border: none;
+}
+
+.call-to-action .text-xs{
+    max-width: 540px;
+    font-weight: 600px;
+    margin-right: 30px;
+}
+
+.call-to-action .btn{
+    width: 145px;
+    height: 56px;
+    background-color: var(--color-primary);
+    color: var(--color-body);
+    border: none;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-xs);
+    font-weight: 600;
+}
 /* End what I do section */
 
 /* My skills section */
