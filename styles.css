@@ -1,0 +1,254 @@
+:root {
+    /* -------------------------------- 
+        Typography
+    -------------------------------- */
+
+    --font-primary: 'Poppins';
+    --font-secondary: serif;
+    --font-typeface: 'Poppins';
+
+    /* type scale */
+    --text-sm: 26px;
+    --text-xs: 20px;
+    --text-xxs: 18px;
+    --text-xxxs: 16px;
+    --text-md: 34px;
+    --text-lg: 40px;
+    --text-xl: 44px;
+    --text-xxl: 55px;
+    --text-xxxl: 64px;
+
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+
+    /* --------------------------------
+        Colors
+    -------------------------------- */
+    /* main colors */
+    --color-primary: #071013;
+
+    --color-accent: #75ABBC;
+
+    --color-body: #DFE0E2;
+
+    /* typography */
+    --color-text: var(--color-body);
+    --color-text-heading: var(--color-body);
+    --color-text-subtle: var(--color-body);
+    --color-link: var(--color-primary);
+    --color-link-visited: var(--color-primary-dark);
+
+    /* buttons */
+    --btn-primary-bg: var(--color-accent);
+    --btn-primary-hover: var(--color-accent-light);
+    --btn-primary-active: var(--color-accent-dark);
+    --btn-primary-label: var(--color-body);
+}
+
+body {
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary), var(--font-secondary);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section */
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/background_image.jpg"); 
+    background-color: var(--color-primary);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar{
+    width: 100%;
+    max-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 90px;
+}
+
+.nav-menu li{
+    padding-left: 50px;
+    font-size: var(--text-xxs);
+    font-family: var(--font-primary);
+    color: var(--color-body);
+}
+
+.nav-menu li:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 70px;
+    width: 90%;
+}
+
+.hero-section-left h1{
+    font-size: var(--text-xxxl);
+}
+
+.hero-section-left span{
+    color: var(--color-accent);
+}
+
+.hero-section-left button{
+    width: 264px;
+    height: 72px;
+    border: none;
+    border-radius: 80px;
+    font-size: var(--text-sm);
+    font-weight:600;
+    background-color: var(--color-accent);
+    color: var(--color-body);
+}
+
+.hero-section-left button:hover{
+    cursor: pointer;
+}
+
+.hero-section-right{
+    display: flex;
+    align-items: flex-end;
+    padding: 0 70px 60px 0;
+}
+
+.hero-section-right .socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-right .socials img{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.hero-section-right .socials img:hover{
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+    color: #fff;
+}
+/* End header section */
+
+/* About me section */
+.about-me{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 100vw;
+    padding: 90px 0;
+}
+
+.sub-heading{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--color-body);
+    width: 100%;
+}
+
+.sub-heading .text-xl{
+    font-size: var(--text-xl);
+    margin: 0;
+    padding: 0;
+}
+
+.columns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.column-1, .column-2{
+    width: 40%;
+    display: flex;
+}
+
+.column-1 img{
+    width: 452px;
+    height: 524px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.column-2{
+    flex-direction: column;
+}
+
+.column-2 .text-sm{
+    font-size: var(--text-sm);
+    margin: 0;
+}
+
+.column-2 .text-md{
+    font-size: var(--text-md);
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 0 0;
+}
+
+.column-2 .text-xs{
+    font-size: var(--text-xs);
+    margin: 0;
+    padding: 20px 0 0;
+}
+
+.column-2 button{
+    width: 264px;
+    height: 72px;
+    border: none;
+    border-radius: 80px;
+    font-size: var(--text-sm);
+    font-weight:600;
+    background-color: var(--color-accent);
+    color: var(--color-body);
+    margin: 30px 0 0;
+}
+
+.column-2 button:hover{
+    cursor: pointer;
+}
+/* End about me section */
+
+/* What I do section */
+
+/* End what I do section */
+
+/* My skills section */
+
+/* End  my skills section */
+
+/* Projects section */
+
+/* End projects section */
+
+/* Contact me section */
+
+/* End contact me section */
