@@ -46,13 +46,15 @@
     --btn-primary-label: var(--color-body);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-size: var(--text-base-size);
     font-family: var(--font-primary), var(--font-secondary);
     color: var(--color-text);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* Header section */
@@ -64,7 +66,6 @@ header{
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    width: 100vw;
     height: 100vh;
 }
 
@@ -160,7 +161,6 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--color-primary);
-    width: 100vw;
     padding: 90px 0;
 }
 
@@ -244,7 +244,6 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: var(--color-primary);
-    width: 100vw;
     padding: 90px 0;
 
 }
@@ -340,7 +339,6 @@ header{
     align-items: center;
     padding: 90px 0;
     background-color: var(--color-primary);
-    width: 100vw;
 }
 
 .skills-container{
@@ -371,7 +369,6 @@ header{
     justify-content: center;
     padding: 90px 0;
     background-color: var(--color-primary);
-    width: 100vw;
 }
 
 .carousel-contanier{
@@ -421,7 +418,6 @@ header{
     justify-content: center;
     padding: 90px 0;
     background-color: var(--color-primary);
-    width: 100vw;
 }
 
 .contact-container{
@@ -531,3 +527,37 @@ input::placeholder, textarea::placeholder{
     font-size: var(--text-xxxs);
 }
 /* End contact me section */
+
+/* Footer section */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    height: 66px;
+    color: var(--color-primary);
+    background-color: var(--color-body);
+}
+
+.back-to-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--text-xxxs);
+    border: none;
+    background-color: var(--color-body);
+    font-family: 'Poppins', sans-serif;
+}
+
+.back-to-top:hover{
+    cursor: pointer;
+}
+
+.back-to-top img{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+/* End footer section */
