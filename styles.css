@@ -12,6 +12,8 @@
     --text-xs: 20px;
     --text-xxs: 18px;
     --text-xxxs: 16px;
+    --text-mobile-body: 14px;
+    --text-mobile-heading: calc(14px*1.618);
     --text-md: 34px;
     --text-lg: 40px;
     --text-xl: 44px;
@@ -71,7 +73,7 @@ header{
 
 .nav-bar{
     width: 100%;
-    max-height: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -81,11 +83,17 @@ header{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin-right: 90px;
+    margin-right: 100px;
+}
+
+.humburger-menu{
+    width: 52px;
+    height: 52px;
+    display: none;
 }
 
 .nav-menu li{
-    padding-left: 50px;
+    padding-left: 45px;
     font-size: var(--text-xxs);
     font-family: var(--font-primary);
     color: var(--color-body);
@@ -117,11 +125,12 @@ header{
 }
 
 .hero-section-left button{
-    width: 264px;
+    width: 145px;
     height: 56px;
+    margin-top: 40px;
     border: none;
     border-radius: 80px;
-    font-size: var(--text-sm);
+    font-size: var(--text-xxs);
     font-weight:600;
     background-color: var(--color-accent);
     color: var(--color-body);
@@ -166,7 +175,7 @@ header{
 
 .sub-heading{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     color: var(--color-body);
     width: 100%;
@@ -182,12 +191,12 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 30px;
+    padding: 0 70px;
 }
 
 .column-1, .column-2{
-    width: 40%;
+    width: 50%;
     display: flex;
 }
 
@@ -201,32 +210,34 @@ header{
 
 .column-2{
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .column-2 .text-sm{
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     margin: 0;
 }
 
 .column-2 .text-md{
-    font-size: var(--text-md);
+    font-size: var(--text-xs);
     font-weight: 600;
     margin: 0;
     padding: 20px 0 0;
 }
 
 .column-2 .text-xs{
-    font-size: var(--text-xs);
+    font-size: var(--text-xxxs);
     margin: 0;
+    margin-bottom: 20px;
     padding: 20px 0 0;
 }
 
 .column-2 button{
-    width: 264px;
+    width: 200px;
     height: 56px;
     border: none;
     border-radius: 80px;
-    font-size: var(--text-xs);
+    font-size: var(--text-xxs);
     font-weight:600;
     background-color: var(--color-accent);
     color: var(--color-body);
@@ -244,14 +255,17 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: var(--color-primary);
-    padding: 90px 0;
 
+}
+
+.services .sub-heading{
+    margin-bottom: 30px;
 }
 
 .services .intro{
     width: 699px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .services-container{
@@ -259,7 +273,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     width: 1209px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .services-container .service{
@@ -282,8 +296,8 @@ header{
 }
 
 .ellipse i img{
-    width: 21px;
-    height: 21px;
+    width: 27px;
+    height: 27px;
 }
 
 .services-container .service .text-md{
@@ -328,6 +342,10 @@ header{
     justify-content: center;
     font-size: var(--text-xs);
     font-weight: 600;
+}
+
+.call-to-action .btn:hover{
+    cursor: pointer;
 }
 /* End what I do section */
 
@@ -398,7 +416,6 @@ header{
     width: 100%;
     height: 100%;
     border-radius: 37px;
-
 }
 
 .project img:hover{
@@ -491,8 +508,13 @@ input::placeholder, textarea::placeholder{
     opacity: 60%;
 }
 
+.message-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .submit-btn{
-    width: 100%;
+    width: 145px;
     height: 56px;
     border: none;
     border-radius: 86px;
@@ -501,8 +523,12 @@ input::placeholder, textarea::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--text-xs);
+    font-size: var(--text-xxs);
     font-weight: 600;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
 }
 
 .contact-details{
@@ -541,7 +567,7 @@ input::placeholder, textarea::placeholder{
     background-color: var(--color-body);
 }
 
-.back-to-top{
+.scroll-to-top{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -551,13 +577,381 @@ input::placeholder, textarea::placeholder{
     font-family: 'Poppins', sans-serif;
 }
 
-.back-to-top:hover{
+.scroll-to-top:hover{
     cursor: pointer;
 }
 
-.back-to-top img{
+.scroll-to-top img{
     width: 32px;
     height: 32px;
     margin-left: 10px;
 }
+
+.scroll-to-top img:hover{
+    width: 34px;
+    height: 34px;
+}
 /* End footer section */
+
+/* Media Queries */
+/*********************** Medium Devices *********************************/
+@media (max-width: 900px){
+    /* NAVIGATION*/
+    .nav-bar{
+        padding: 45px 50px 0 0;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+    
+    .humburger-menu{
+        display: flex;
+    }
+
+    /* END NAVIGATION*/
+
+    /* HERO SECTION */
+    .hero-section-left{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero-section-left h1{
+        font-size: var(--text-xxl);
+    }
+    
+    .hero-section-left button{
+        margin-top: 50px;
+    }
+
+    .hero-section-right{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    
+    .hero-section-right .socials img{
+        width: 26px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    .hero-section-right .socials img:hover{
+        width: 30px;
+        height: 35px;
+    }
+    /* END HERO SECTION */
+
+    /* About me section */
+.about-me{
+    padding: 70px 0;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+}
+
+.sub-heading .text-xl{
+    font-size: var(--text-lg);
+}
+
+.column-1, .column-2{
+    width: 45%;
+    display: flex;
+}
+
+.column-1 img{
+    width: 100%;
+    height: 80%;
+    padding-top: 60px;
+}
+
+.column-2{
+    margin-top: 0;
+}
+
+.column-2 .text-sm{
+    font-size: var(--text-xs);
+}
+
+.column-2 .text-md{
+    font-size: var(--text-xs);
+    padding-top: 15px;
+}
+
+.column-2 .text-xs{
+    font-size: var(--text-xxxs);
+}
+
+.column-2 button{
+    margin: 20px 0 0;
+}
+
+/* End about me section */
+
+/* What I do section */
+.services{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.services .sub-heading{
+    margin: 50px 0;
+}
+
+.services .intro{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.services-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container .service{
+    width: 90%;
+    padding: 30px 50px;
+}
+
+.ellipse{
+    width: 57px;
+    height: 57px;
+
+}
+
+.ellipse i img{
+    width: 26px;
+    height: 26px;
+}
+
+.services-container .service .text-md{
+    padding: 12px 0;
+}
+.services-container .service .text-xs{
+    text-align: center;
+    width: 80%;
+    line-height: 1.5;
+}
+
+.call-to-action{
+    width: 90%;
+    padding: 30px;
+}
+
+.call-to-action .text-xs{
+    font-size: var(--text-xxxs);
+    width: 75%;
+}
+
+.call-to-action .btn{
+    font-size: var(--text-xxs);
+}
+/* End what I do section */
+
+/* My skills section */
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.skills-container .skill{
+    margin: 10px 30px;
+}
+
+.skills-container .skill img{
+    width: 120px;
+    height: 98px;
+}
+
+/* End  my skills section */
+
+/* Projects section */
+
+.projects{
+    width: 100%;
+}
+
+.carousel-contanier{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.project{
+    width: 260px;
+    height: 260px;
+}
+
+.project img:hover{
+    width: 263px;
+    height: 263px;
+}
+/* End projects section */
+
+/* Contact me section */
+
+.contact{
+    padding-bottom: 30px;
+}
+
+.contact-container{
+    width: 100%;
+    flex-direction: column;
+}
+
+.message{
+    width: 90%;
+    padding: 0 50px;
+}
+
+.contact-details{
+    padding: 0 50px;
+}
+
+.form{
+    width: 100%;
+}
+
+#message textarea{
+    height: 110px;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+#message span{
+    opacity: 60%;
+}
+
+
+.submit-btn{
+    width: 145px;
+    font-size: var(--text-xxxs);
+    margin-top: 10px;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
+
+.contact-details{
+    margin-top: 50px 0 10px 0;
+}
+
+.contact-details .details{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-details .details img{
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+}
+
+.contact-details .details .text-xs{
+    font-size: var(--text-xxxs);
+}
+/* End contact me section */
+
+}
+
+/*********************** Small Devices *********************************/
+@media (max-width: 767px){
+    body {
+        font-size: var(--text-mobile-body);
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section-left{
+        display: flex;
+        flex-direction: column;
+        padding: 70px 40px 20px 40px;
+        width: 100%;
+    }
+    
+    .hero-section-left h1{
+        font-size: 40px;
+    }
+    
+    .hero-section-left span{
+        color: var(--color-accent);
+    }
+    
+    .hero-section-left button{
+        margin: 40px auto;
+    }
+
+    .hero-section-right{
+        display: none;
+    }
+    
+    /* End header section */
+
+    /* About me section */
+.about-me{
+    padding: 30px 0;
+}
+
+
+.columns{
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 0;
+}
+
+.column-1, .column-2{
+    width: 100%;
+    display: flex;
+}
+
+.column-1 img{
+    width: 100%;
+    height: 424px;
+}
+
+.column-2{
+    margin-top: 10%;
+}
+
+.column-2 .text-sm{
+    font-size: var(--text-xxxs);
+}
+
+.column-2 .text-md{
+    padding: 10px 0 0;
+}
+
+.column-2 .text-xs{
+    padding: 20px 0 0;
+}
+
+.column-2 button{
+    margin: 30px auto;
+}
+
+/* End about me section */
+    
+}
