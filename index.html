@@ -8,8 +8,11 @@
 </head>
 <body>
 <!-- Header section -->
-     <header name="hero" id="hero">
+     <section class="hero" name="hero" id="hero">
         <nav class="nav-bar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
             <ul class="nav-menu">
                 <li class="text--sm">Home</li>
                 <li class="text--sm">About me</li>
@@ -24,7 +27,10 @@
         <div class="hero-section">
             <div class="hero-section-left">
                 <h1 class="text-xxl">Hi there!<br>My name is Sizwe<br>and I’m a <span>full Stack Developer</span></h1>
-                <button class="btn">Hire me</button>
+                <div class="btns">
+                    <button class="btn-1">View Projects</button>
+                    <button class="btn-2">Hire Me</button>
+                </div>
             </div>
             <div class="hero-section-right">
                 <div class="socials">
@@ -35,21 +41,21 @@
                 </div>
             </div>
         </div>
-     </header>
+     </section>
 <!-- End header section -->
 
 <!-- About me section -->
      <section class="about-me" id="about">
         <div class="sub-heading">
-            <h2 class="text-xl">About me</h2>
+            <h2>About me</h2>
         </div>
         <div class="columns">
             <div class="column-1">
                 <img src="images/about_img_1 1 - Copy.png" alt="Myself">
             </div>
             <div class="column-2">
-                <p class="text-sm">Hello, I am Sizwe</p>
-                <p class="text-md">I’m committed to building solutions 
+                <p class="text-md">Hello, I am Sizwe</p>
+                <p class="text-sm">I’m committed to building websites 
                     that are as functional as they are 
                     beautiful.
                 </p>
@@ -57,10 +63,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim, 
                     et eleifend magna. Donec in risus vehicula augue congue luctus a at risus. 
-                    Nunc quis lorem vitae diam congue maximus. Praesent vel ornare ligula. 
-                    Sed eget tellus sed ipsum porta finibus. Fusce et convallis justo.
+                    Nunc quis lorem vitae diam congue maximus.
                 </p>
-                <button class="btn">Download CV</button>
+                <button class="btn-2">Download CV</button>
             </div>
         </div>
      </section>
@@ -69,12 +74,10 @@
 <!-- What I do section -->
 <section class="services" id="services">
     <div class="sub-heading">
-        <h2 class="text-xl">What I Do</h2>
+        <h2>What I Do</h2>
     </div>
     <p class="text-xs intro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim, 
-        et eleifend magna. Donec in risus vehicula augue congue luctus a at risus. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
     <div class="services-container">
         <div class="service">
@@ -85,7 +88,7 @@
             <p class="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim, 
-                et eleifend magna. Donec in risus vehicula augue congue luctus a at risus. 
+                et eleifend magna. 
             </p>
         </div>
         <div class="service">
@@ -96,18 +99,18 @@
             <p class="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim, 
-                et eleifend magna. Donec in risus vehicula augue congue luctus a at risus. 
+                et eleifend magna. 
             </p>
         </div>
         <div class="service">
             <div class="ellipse">
                 <i><img src="images/hugeicons_software-license.svg" alt="software"></i>
             </div>
-            <p class="text-md">Website Development</p>
+            <p class="text-md">Web Development</p>
             <p class="text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim, 
-                et eleifend magna. Donec in risus vehicula augue congue luctus a at risus. 
+                et eleifend magna.
             </p>
         </div>
     </div>
@@ -117,7 +120,7 @@
             Vivamus porta leo nec massa blandit sodales. Morbi sed placerat enim. 
             Morbi sed placerat enim.
         </p>
-        <button class="btn">Hire me</button>
+        <button class="btn-3">Hire me</button>
     </div>
  </section>
 <!-- End what I do section -->
@@ -125,7 +128,7 @@
 <!-- My skills section -->
     <section class="skills" id="skills">
         <div class="sub-heading">
-            <h2 class="text-xl">My Skills</h2>
+            <h2>My Tools</h2>
         </div> 
         <div class="skills-container">
             <div class="skill">
@@ -157,7 +160,7 @@
 
     <section class="projects" id="projects">
         <div class="sub-heading">
-            <h2 class="text-xl">Projects</h2>
+            <h2>Projects</h2>
         </div>
         <div class="carousel-container">
             <div class="slider">
@@ -187,7 +190,7 @@
 <!-- Contact me section -->
     <section class="contact" id="contact">
         <div class="sub-heading">
-            <h2 class="text-xl">Contact Me</h2>
+            <h2>Contact Me</h2>
         </div>
         <div class="contact-container">
             <div class="message">
@@ -208,7 +211,7 @@
                           </div>
                       </fieldset>
                       <div class="message-btn">
-                        <button class="submit-btn" type="submit">Submit</button>
+                        <button class="btn-2" type="submit">Submit</button>
                       </div>
                 </form>
             </div>
@@ -246,7 +249,7 @@
 <!-- End contact me section -->
 
 <!-- Footer section -->
-    <footer class="footer">
+    <section class="footer">
         <p class="text-xs">
             Copyright &copy; 2025
         </p>
@@ -254,10 +257,9 @@
             Made with love by Sizwe
         </p>
         <button href="hero"class="scroll-to-top">
-            BACK TO THE TOP
             <img src="images/upload.png" alt="top">
         </button>
-    </footer>
+    </section>
 <!-- End footer section -->
 
     <script src="index.js"></script>
