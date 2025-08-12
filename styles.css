@@ -119,9 +119,7 @@ button{
     list-style-type: none;
 }
 
-.humburger-menu{
-    width: 52px;
-    height: 52px;
+.humburger-container{
     display: none;
 }
 
@@ -511,7 +509,7 @@ input::placeholder, textarea::placeholder{
 
 .contact-details .details .text-xs{
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: var(--text-xxxs);
 }
 /* End contact me section */
@@ -558,6 +556,12 @@ input::placeholder, textarea::placeholder{
 /* Media Queries */
 /*********************** Large Devices *********************************/
 @media (max-width: 1080px){
+
+    .sub-heading{
+    font-size: var(--text-lg);
+    padding-top: 0;
+    }
+}
     /* NAVIGATION*/
     .nav-bar{
         padding: 45px 50px 0 50px;
@@ -579,6 +583,10 @@ input::placeholder, textarea::placeholder{
     }
 
     .nav-menu.active{
+        display: flex; 
+    }
+
+    .humburger-container{
         display: flex;
     }
     
@@ -588,7 +596,24 @@ input::placeholder, textarea::placeholder{
         height: 44px;
     }
 
-        .humburger-menu:hover{
+    .remove-menu{
+        display: none;
+    }
+
+    .humburger-container.active .humburger-menu{
+        display: none;
+    }
+
+    .humburger-container.active .remove-menu{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .humburger-menu:hover{
         cursor: pointer;
     }
     /* END NAVIGATION*/
@@ -621,234 +646,186 @@ input::placeholder, textarea::placeholder{
     /* END HERO SECTION */
 
     /* About me section */
-.about-me{
-    padding: 40px 0;
-}
+    .about-me{
+        padding: 40px 0;
+    }
 
-.columns{
-    display: flex;
-    justify-content: space-evenly;
-    padding-right: 50px;
-}
+    .columns{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 0;
+    }
 
-.sub-heading .text-xl{
-    font-size: var(--text-lg);
-}
+    .sub-heading .text-xl{
+        font-size: var(--text-lg);
+    }
 
-.column-1, .column-2{
-    width: 45%;
-    display: flex;
-}
+    .column-1, .column-2{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px 0 30px;
+    }
 
-.column-1 img{
-    width: 100%;
-    height: 80%;
-    padding-top: 60px;
-}
+    .column-1 img{
+        width: 60%;
+        height: 33%;
+        padding-top: 0;
+        background-position: center;
+    }
 
-.column-2{
-    margin-top: 0;
-}
+    .column-2{
+        margin-top: 0;
+    }
 
-.column-2 .text-sm{
-    font-size: var(--text-xs);
-}
+    .column-2 .text-sm{
+        font-size: var(--text-sm);
+        text-align: center;
+    }
 
-.column-2 .text-md{
-    font-size: var(--text-xs);
-    padding-top: 15px;
-}
+    .column-2 .text-md{
+        font-size: var(--text-md);
+        padding-top: 15px;
+        text-align: center;
+    }
 
-.column-2 .text-xs{
-    font-size: var(--text-xxxs);
-}
+    .column-2 .text-xs{
+        font-size: var(--text-xxxs);
+        text-align: center;
+    }
 
-.column-2 button{
-    margin: 20px 0 0;
-}
+    .column-2 button{
+        margin: 20px 0 0;
+    }
 
-/* End about me section */
+    /* End about me section */
 
-/* What I do section */
-.services{
-    width: 100%;
-    padding-bottom: 50px;
-}
+    /* What I do section */
+    .services{
+        width: 100%;
+        padding: 0;
+    }
 
-.services .sub-heading{
-    margin: 50px 0;
-}
+    .services .intro{
+        width: 100%;
+        padding: 30px 50px 0;
+    }
 
-.services .intro{
-    width: 100%;
-    padding: 0 50px;
-}
+    .services-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
 
-.services-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .services-container .service{
+        width: 90%;
+        padding: 0 50px;
+    }
 
-.services-container .service{
-    width: 90%;
-    padding: 30px 50px;
-}
+    .ellipse{
+        width: 57px;
+        height: 57px;
 
-.ellipse{
-    width: 57px;
-    height: 57px;
+    }
 
-}
+    .ellipse i img{
+        width: 26px;
+        height: 26px;
+    }
 
-.ellipse i img{
-    width: 26px;
-    height: 26px;
-}
+    .services-container .service .text-md{
+        padding: 12px 0;
+    }
+    .services-container .service .text-xs{
+        text-align: center;
+        width: 80%;
+        line-height: 1.5;
+        padding-top: 0;
+    }
 
-.services-container .service .text-md{
-    padding: 12px 0;
-}
-.services-container .service .text-xs{
-    text-align: center;
-    width: 80%;
-    line-height: 1.5;
-}
+    .call-to-action{
+        width: 80%;
+        padding: 30px;
+    }
 
-.call-to-action{
-    width: 90%;
-    padding: 30px;
-}
+    .call-to-action .text-xs{
+        font-size: var(--text-xxxs);
+        width: 75%;
+    }
 
-.call-to-action .text-xs{
-    font-size: var(--text-xxxs);
-    width: 75%;
-}
+    .call-to-action .btn{
+        font-size: var(--text-xxs);
+    }
+    /* End what I do section */
 
-.call-to-action .btn{
-    font-size: var(--text-xxs);
-}
-/* End what I do section */
+    /* My skills section */
 
-/* My skills section */
+    .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-bottom: 0;
+    }
 
-.skills-container{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 90px;
-}
+    .skills-container .skill{
+        margin: 20px;
+    }
 
-.skills-container .skill{
-    margin: 10px 30px;
-}
+    .skills-container .skill img{
+        width: 100%;
+        height: 100%;
+    }
 
-.skills-container .skill img{
-    width: 120px;
-    height: 98px;
-}
+    /* End  my skills section */
 
-/* End  my skills section */
+    /* Projects section */
 
-/* Projects section */
+    .projects{
+        width: 100%;
+        padding: 0;
+    }
 
-.projects{
-    width: 100%;
-}
+    .slider{
+        width: 100%;
+        padding: 0 50px;
+    }
 
-.carousel-contanier{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .project{
+        width: 260px;
+        height: 260px;
+    }
+    /* End projects section */
 
-.slider{
-    width: 100%;
-    padding: 0 50px;
-}
+    /* Contact me section */
 
-.project{
-    width: 260px;
-    height: 260px;
-}
+    .contact{
+        padding-top: 0;
+    }
 
-.project img:hover{
-    width: 263px;
-    height: 263px;
-}
-/* End projects section */
+    .contact-container{
+        width: 100%;
+        flex-direction: column;
+    }
 
-/* Contact me section */
+    .message{
+        width: 100%;
+        padding: 0 60px;
+    }
 
-.contact{
-    padding-bottom: 30px;
-}
+    .message .form{
+        margin-bottom: 30px;
+        width: 100%;
+    }
 
-.contact-container{
-    width: 100%;
-    flex-direction: column;
-}
-
-.message{
-    width: 90%;
-    padding: 0 50px;
-}
-
-.contact-details{
-    padding: 0 50px;
-}
-
-.form{
-    width: 100%;
-}
-
-#message textarea{
-    height: 110px;
-    margin-bottom: 5px;
-    resize: none;
-}
-
-#message span{
-    opacity: 60%;
-}
-
-
-.submit-btn{
-    width: 145px;
-    font-size: var(--text-xxxs);
-    margin-top: 10px;
-}
-
-.submit-btn:hover{
-    cursor: pointer;
-}
-
-.contact-details{
-    margin-top: 50px 0 10px 0;
-}
-
-.contact-details .details{
-    display: flex;
-    flex-direction: row;
-}
-
-.contact-details .details img{
-    width: 27px;
-    height: 27px;
-    margin-right: 15px;
-}
-
-.contact-details .details .text-xs{
-    font-size: var(--text-xxxs);
-}
+    .contact-details{
+        width: 100%;
+        padding: 0 60px;
+    }
 /* End contact me section */
-
-}
 
 /*********************** Medium Devices *********************************/
 @media (max-width: 780px){

@@ -10,11 +10,11 @@ scrollToTopBtn.addEventListener('click', () =>{
 // Toggle Navigation Menu
 // This code toggles the visibility of the navigation menu when the hamburger icon is clicked.
 document.addEventListener('DOMContentLoaded', () => {
-    const humburgerMenu = document.querySelector(".humburger-menu");
+    const humburgerMenu = document.querySelector(".humburger-container");
     const navigation = document.querySelector(".nav-menu");
 
     humburgerMenu.addEventListener('click', () => {
-        navigation.classList.toggle("active");
         humburgerMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
     });
 });
