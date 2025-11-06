@@ -83,11 +83,11 @@ section{
 
 button{
     width: 145px;
-    height: 56px;
+    height: 50px;
     border: none;
     border-radius: 8px;
     font-size: var(--text-xxxs);
-    font-weight:600;
+    font-family: var(--font-primary);
     
 }
 

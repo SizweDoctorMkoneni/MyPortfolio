@@ -31,4 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation.classList.remove("active");
         });
     });
+
+    // Close navigation when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideNav = navigation.contains(event.target);
+        const isClickOnHamburger = humburgerMenu.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnHamburger && navigation.classList.contains('active')) {
+            humburgerMenu.classList.remove("active");
+            navigation.classList.remove("active");
+        }
+    });
 });
