@@ -109,7 +109,7 @@
 
     /* About me section */
     .about-me{
-        padding: 40px 0;
+        padding: 80px 0 0 0;
     }
 
     .columns{
@@ -166,7 +166,7 @@
     /* What I do section */
     .services{
         width: 100%;
-        padding: 0;
+        padding: 80px 0 0 0;
     }
 
     .services .intro{
@@ -248,7 +248,7 @@
 
     .projects{
         width: 100%;
-        padding: 0;
+        padding: 80px 0 0 0;
     }
 
     .slider{
@@ -265,7 +265,7 @@
     /* Contact me section */
 
     .contact{
-        padding-top: 0;
+        padding: 80px 0 0 0;
     }
 
     .contact-container{
@@ -355,7 +355,6 @@
 
     /* About me section */
     .about-me{
-        padding-top: 40px;
         padding-bottom: 0;
     }
 
@@ -394,12 +393,12 @@
 
     .column-2 .text-xs{
         text-align: center;
-        padding: 20px 12px 0 12px;
+        padding: 20px 0 0 0;
         margin-bottom: 0;
     }
 
-    .column-2 button{
-        margin: 30px auto;
+    .column-2 .btn-2{
+        margin: 30px 0 0 0;
     }
 
     /* End about me section */
