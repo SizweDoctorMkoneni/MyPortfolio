@@ -79,10 +79,12 @@
     .hero-section{
         display: flex;
         flex-direction: column;
+        margin-top: 90px;
     }
     .hero-section-left{
         display: flex;
         justify-content: center;
+        width: 90%;
     }
     
     .hero-section-left h1{
@@ -90,10 +92,18 @@
         line-height: 1.3;
     }
 
+    .hero-section-left p{
+        max-width: 100%;
+    }
+
+    .btns{
+    margin-top: 30px;
+    }
+
     button{
     width: 143px;
     height: 54px;
-    margin-top: 50px;
+    margin-top: 30px;
     }
     /* END HERO SECTION */
 
@@ -315,8 +325,14 @@
         font-size: 54px;
         text-align: center;
         width: 80%;
-        line-height: normal;
-        margin: 6% 0;
+        line-height: 1.3;
+        margin: 3% 0;
+    }
+
+    .hero-section-left p{
+        text-align: center;
+        margin-bottom: 0;
+        max-width: 70%;
     }
 
     .hero-section-left button{
@@ -324,16 +340,15 @@
     }
     
     .hero-section-left .btns{
-        width: 55%;
-        height: 120px;
+        width: 70%;
+        height: 90px;
         margin-bottom: 30%;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
-    .btns .btn-1{
-        margin: 0;
+    .btns .btn-1, .btn-2{
+        margin: 0 30px;
     }
 
     /* End header section */

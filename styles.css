@@ -149,7 +149,6 @@ button{
     justify-content: space-between;
     padding: 0 45px;
     position: fixed;
-    background-color: var(--color-nav-background);
 }
 
 .nav-menu{
@@ -181,22 +180,32 @@ button{
 .hero-section{
     display: flex;
     flex-direction: row;
-    margin-top: 95px;
+    margin-top: 150px;
 }
 
 .hero-section-left{
     flex-direction: column;
     padding: 40px 60px;
-    width: 85%;
+    width: 80%;
 }
+
+.hero-section-left p{
+    font-size: var(--text-xxs);
+    margin: 0;
+    padding: 10px 0 0;
+    line-height: 1.5;
+    max-width: 70%; 
+}
+
 
 .hero-section-left h1{
     font-size: var(--text-xxxxl);
-    line-height: 1.5;
+    line-height: 1.2;
+    color: var(--color-accent);
 }
 
-.hero-section-left span{
-    color: var(--color-accent);
+.hero-section-left h1 span{
+    color: var(--color-accent-secondary);
 }
 
 .hero-section-left button:hover{
@@ -206,7 +215,7 @@ button{
 .btns{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .btns .btn-1, .btn-2{
