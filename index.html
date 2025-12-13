@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <!-- meta data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
      <link rel="stylesheet" href="responsive.css">
 
 </head>
+
 <body>
 <!-- Header section -->
      <section class="hero" name="hero" id="home">
@@ -83,7 +84,7 @@
 <!-- End about me section -->
 
 <!-- What I do section -->
-<section class="services" id="services">
+    <section class="services" id="services">
     <div class="sub-heading">
         <h2>What I Do</h2>
     </div>
@@ -133,7 +134,7 @@
         </p>
         <button class="btn-1">Hire Me</button>
     </div>
- </section>
+    </section>
 <!-- End what I do section -->
 
 <!-- My skills section -->
@@ -168,31 +169,35 @@
 <!-- End my skills section -->
 
 <!-- Projects section -->
-
     <section class="projects" id="projects">
         <div class="sub-heading">
             <h2>Projects</h2>
         </div>
         <div class="carousel-container">
             <div class="slider">
-                <div class="project">
+
+                <input type="radio" name="slide" id="project1" checked>
+                <input type="radio" name="slide" id="project2">
+                <input type="radio" name="slide" id="project3">
+                <input type="radio" name="slide" id="project4">
+                <div class="project p1">
                     <img src="images/project_1 1.png" alt="project1">
                 </div>
-                <div class="project">
+                <div class="project p2">
                     <img src="images/project_2 1.png" alt="project2">
                 </div>
-                <div class="project">
+                <div class="project p3">
                     <img src="images/project_3 1.png" alt="project3">
                 </div>
-                <div class="project">
-                    <img src="images/project_4 1.JPG" alt="project3">
+                <div class="project p4">
+                    <img src="images/project_4 1.JPG" alt="project4">
                 </div>
-                <div class="project">
-                    <img src="images/project_5 1.JPG" alt="project3">
-                </div>
-                <div class="project">
-                    <img src="images/project_6 1.jpeg" alt="project3">
-                </div>
+            </div>
+            <div class="dots">
+                <label for="project1"></label>
+                <label for="project2"></label>
+                <label for="project3"></label>
+                <label for="project4"></label>
             </div>
         </div>
     </section>
@@ -276,4 +281,5 @@
     <!-- index.js -->
     <script src="index.js"></script>
 </body>
+
 </html>

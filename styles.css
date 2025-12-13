@@ -15,7 +15,8 @@
     --text-xs: 20px;
     --text-xxs: 18px;
     --text-xxxs: 16px;
-    --text-mobile-body: 14px;
+   
+ --text-mobile-body: 14px;
     --text-mobile-heading: calc(14px*1.618);
     --text-md: 34px;
     --text-lg: 40px;
@@ -36,7 +37,10 @@
     /* main colors */
     --color-primary: #071013;
     --color-body: #DFE0E2;
-    --color-accent: #75ABBC;
+    --color-accent: #7caebd;
+    
+
+
     --color-accent-secondary: #e09200;
     --color-accent-hover: #569cb1;
     --color-accent-secondary-hover: #d5d80b;
@@ -430,7 +434,7 @@ button{
     background-color: var(--color-primary);
 }
 
-.carousel-contanier{
+.carousel-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,6 +464,9 @@ button{
 
 .project img:hover{
     border-radius: 0;
+}
+.slider input[type="radio"]{
+    display: none;
 }
 
 
