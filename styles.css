@@ -366,7 +366,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px 0;
     background-color: var(--color-accent);
     color: var(--color-body);
@@ -377,7 +377,6 @@ button{
 .call-to-action .text-xs{
     max-width: 540px;
     font-weight: 600px;
-    margin-right: 30px;
 }
 
 .call-to-action .btn-2{
@@ -483,7 +482,7 @@ button{
 
 .contact-container{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -498,7 +497,7 @@ button{
 }
 
 .message .text-xs{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .contact-details{

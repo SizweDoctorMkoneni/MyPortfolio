@@ -185,7 +185,7 @@
 
     .services-container .service{
         width: 90%;
-        padding: 15px 30px;
+        padding: 20px 30px;
     }
 
     .ellipse{
@@ -204,7 +204,7 @@
     }
     .services-container .service .text-xs{
         text-align: center;
-        width: 85%;
+        width: 90%;
         line-height: 1.5;
         padding-top: 0;
     }
