@@ -351,18 +351,23 @@ button{
     background-color: var(--color-accent);
 }
 
-.ellipse i img{
-    width: 33px;
-    height: 33px;
+.ellipse i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.ellipse i.fa-solid{
+    color: var(--color-body);
+    font-size: 24px;
+}
 .services-container .service{
     text-align: center;
 }
 
 .call-to-action{
     width: 80%;
-    height: 179px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -375,8 +380,14 @@ button{
 }
 
 .call-to-action .text-xs{
-    max-width: 540px;
+    width: 60%;
     font-weight: 600px;
+}
+
+.call-to-action .text-xs span{
+    font-size: var(--text-md);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .call-to-action .btn-2{

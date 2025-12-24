@@ -424,6 +424,10 @@
         font-size: var(--text-xxxs);
     }
 
+    .services .text-xs span{
+        font-size: var(--text-sm);
+    }
+
     .services-container{
         display: flex;
         flex-direction: column;
@@ -450,7 +454,7 @@
 
     .call-to-action{
         width: 75%;
-        height: 320px;
+        height: auto;
         margin: 40px 0 60px 0;
         flex-direction: column;
     }
@@ -463,7 +467,7 @@
     }
 
     .call-to-action .btn-1{
-        height: 50px;
+        height: 55px;
         margin-top: 10px;
     }
     /* End what I do section */
