@@ -490,16 +490,25 @@
 
     .slider{
         padding: 0 20px;
-        transition: transform 0.5s ease;
+        transition: margin-left 0.5s ease;
         display: flex;
         flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
         width: 100%;
+        margin-left: 0;
         height: 70%;
+    }
+
+    .slider::-webkit-scrollbar{
+        display: none;
     }
 
     .project{
         margin: 0 40px;
-        flex: 0 0 100%;
+        flex: 0 0 90vw;
+        margin: 0;
+        margin-right: 45px;
         height: inherit;
     }
 
@@ -534,15 +543,15 @@
 }
 
 #project2:checked ~ .p2{
-    margin-left: calc(-1 * (90vw + 40px));
+    margin-left: calc(-1 * (90vw + 45px));
 }
 
 #project3:checked ~ .p3{
-    margin-left: calc(-2 * (90vw + 40px));
+    margin-left: calc(-2 * (90vw + 45px));
 }
 
 #project4:checked ~ .p4{
-    margin-left: calc(-3 * (90vw + 40px));
+    margin-left: calc(-3 * (90vw + 45px));
 }
 
     /* End project section */
