@@ -173,6 +173,12 @@ button{
     background-color: var(--color-nav-background);
 }
 
+.logo h1{
+    font-family: 'Knewave', cursive;
+    color: var(--color-accent);
+    font-size: var(--text-md);
+}
+
 .nav-menu{
     display: flex;
     flex-direction: row;
