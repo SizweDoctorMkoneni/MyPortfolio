@@ -742,15 +742,15 @@
     }
 
     #project2:checked ~ .p2{
-        margin-left: calc(-1 * (90vw + 40px));
+        margin-left: calc(-1 * (90vw + 45px));
     }
 
     #project3:checked ~ .p3{
-        margin-left: calc(-2 * (90vw + 40px));
+        margin-left: calc(-2 * (90vw + 45px));
     }
 
     #project4:checked ~ .p4{
-        margin-left: calc(-3 * (90vw + 40px));
+        margin-left: calc(-3 * (90vw + 45px));
     }
 
     .contact-container,

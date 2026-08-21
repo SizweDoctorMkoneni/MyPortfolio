@@ -665,7 +665,7 @@ input::placeholder, textarea::placeholder{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 70px;
+    padding: 0 100px;
     height: 55px;
     color: var(--color-primary);
     background-color: var(--color-body);
