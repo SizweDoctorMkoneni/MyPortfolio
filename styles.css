@@ -296,12 +296,44 @@ button{
 
 }
 
+.column-2 .text-xs{
+    margin-bottom: 5px;
+}
+
 .column-2 .btn-2{
-    margin: 10px 0;
+    margin: 25px 0 10px;
 }
 
 .column-2 button:hover{
     cursor: pointer;
+}
+
+.column-2 .cutoff-text{
+    --max-lines: 11;
+    --line-height: 1.4;
+
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    overflow: hidden;
+    line-height: var(--line-height);
+    position: relative;
+}
+
+.column-2 .cutoff-text::before{
+    content: "";
+    position: absolute;
+    height: calc(2rem * var(--line-height));
+    bottom: 0;
+    pointer-events: none;
+}
+
+.column-2 .expand-btn{
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 0;
+    color: var(--color-body);
+    font-family: var(--font-primary);
+    display: block;
 }
 /* End about me section */
 
